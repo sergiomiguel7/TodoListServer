@@ -1,0 +1,26 @@
+{
+  "name": "todo_server",
+  "version": "1.0.0",
+  "description": "Simple api to a todo list",
+  "main": "app.js",
+  "scripts": {
+    "test": "nodemon app.js",
+    "start": "node app.js",
+    "lint": "eslint src/js"
+  },
+  "author": "Sérgio Carvalho",
+  "license": "ISC",
+  "devDependencies": {
+    "eslint": "^7.10.0",
+    "nodemon": "^2.0.4"
+  },
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "express-validator": "^6.6.1",
+    "helmet": "^4.1.1",
+    "mongoose": "^5.10.7",
+    "morgan": "^1.10.0"
+  }
+}
