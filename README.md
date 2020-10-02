@@ -14,21 +14,21 @@ Simple api to a todo list
 
 Every record should have 
 
-[x] Created At: Datetime
-[x] Updated At: Datetime
+- [x] Created At: Datetime
+- [x] Updated At: Datetime
 
 
-[] user
-    [] _id
-    [] username
+- [] user
+    - [] _id
+    - [] username
 
 
-[] event
-    [] _id
-    [] userId  
-    [] title : string
-    [] description : string
-    [] completed : boolean
+- [] todo
+    - [] _id
+    - [] userId  
+    - [] title : string
+    - [] description : string
+    - [] completed : boolean
 
 
 
