@@ -8,7 +8,8 @@ exports.create = (req, res) => {
     new Todos({
         userId: req.params.id,
         title: req.body.title,
-        description: req.body.description
+        description: req.body.description,
+        marked_date: req.body.marked_date
     }).save((err, todo) => {
         if (err) throw err;
 
