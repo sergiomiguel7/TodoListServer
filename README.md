@@ -26,6 +26,7 @@ Every record should have
 - [x] todo
     - [x] _id
     - [x] userId  
+    - [x] marked_date : string
     - [x] title : string
     - [x] description : string
     - [x] completed : boolean
