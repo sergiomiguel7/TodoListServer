@@ -18,17 +18,17 @@ Every record should have
 - [x] Updated At: Datetime
 
 
-- [] user
-    - [] _id
-    - [] username
+- [x] user
+    - [x] _id
+    - [x] username
 
 
-- [] todo
-    - [] _id
-    - [] userId  
-    - [] title : string
-    - [] description : string
-    - [] completed : boolean
+- [x] todo
+    - [x] _id
+    - [x] userId  
+    - [x] title : string
+    - [x] description : string
+    - [x] completed : boolean
 
 
 

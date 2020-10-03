@@ -16,10 +16,11 @@ exports.create = (req, res) => {
         }).save((error, user) => {
             if(error) throw error;
 
-            res.status(200).json({
+            res.status(201).json({
                 message: "created with sucess",
                 user: user
             })
         })
     })
 }
+
