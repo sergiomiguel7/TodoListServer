@@ -12,7 +12,8 @@ exports.create = (req, res) => {
         if (user) return res.status(409).send("User already exist");
 
         new User({
-            name: req.body.username
+            name: req.body.username,
+            todos: []
         }).save((error, user) => {
             if(error) throw error;
 
