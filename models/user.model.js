@@ -6,7 +6,11 @@ const userSchema = new Schema({
     active: {
         type: Boolean,
         default: true
-    }
+    },
+    todos: [{
+        type: Schema.Types.ObjectId,
+        ref: 'todos'
+    }]
 }, {
     timestamps: {
         createdAt: 'created_at',
