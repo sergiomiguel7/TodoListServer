@@ -6,7 +6,9 @@ const AuthController = require('../controllers/auth.controller');
 const router = express.Router();
 
 router.route('/')
-    .post([validator.body('username').isString()], UserController.create)
+    .post([validator.body('username').isString(),
+    validator.body('password').isString()
+], UserController.create)
 
 router.route('/login')    
     .post([validator.body('username').isString()], AuthController.login)
