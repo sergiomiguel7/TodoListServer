@@ -1,5 +1,6 @@
 const User = require('../models/user.model');
 const { validationResult } = require('express-validator');
+const bcrypt = require('bcryptjs');
 
 exports.create = (req, res) => {
     const errors = validationResult(req).array();
@@ -13,7 +14,8 @@ exports.create = (req, res) => {
 
         new User({
             name: req.body.username,
-            todos: []
+            todos: [],
+            password: bcrypt.hashSync(req.body.password, 12)
         }).save((error, user) => {
             if(error) throw error;
 
