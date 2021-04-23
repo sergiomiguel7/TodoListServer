@@ -19,6 +19,8 @@ exports.create = (req, res) => {
         }).save((error, user) => {
             if(error) throw error;
 
+            user.password = undefined;
+
             res.status(201).json({
                 message: "created with sucess",
                 user: user

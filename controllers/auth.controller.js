@@ -35,6 +35,7 @@ exports.login = (req, res) => {
             if (user) {
 
                 user.token = token;
+                user.password = undefined;
 
                 res.status(200).json({
                     message: "Login sucessfull",
